@@ -1,0 +1,55 @@
+<form [formGroup]="formulario" (ngSubmit)="guardarTarjeta()">
+    <div class="form-group">
+        <div class="input-group">
+            <div class="input-group-prepend">
+                <div class="input-group-text bg-white">
+                    <i class="fas fa-user-circle" [class.green-icon]="this.formulario.get('titular').valid"
+                    [class.red-icon]="this.formulario.get('titular').invalid && this.formulario.get('titular').touched"></i>
+                </div>
+            </div>
+            <input type="text" class="form-control" formControlName="titular" placeholder="Titular">
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="input-group">
+            <div class="input-group-prepend">
+                <div class="input-group-text bg-white">
+                    <i class="fas fa-credit-card" [class.green-icon]="this.formulario.get('numeroTarjeta').valid"
+                    [class.red-icon]="this.formulario.get('numeroTarjeta').invalid && this.formulario.get('numeroTarjeta').touched"></i>
+                </div>
+            </div>
+            <input type="text" class="form-control" formControlName="numeroTarjeta" maxlength="16" placeholder="Numero de Tarjeta">
+        </div>
+    </div>
+    <div class="row">
+        <div class="form-group col-md-7">
+            <div class="form-group">
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <div class="input-group-text bg-white">
+                            <i class="fas fa-calendar-alt" [class.green-icon]="this.formulario.get('fechaExpiracion').valid"
+                            [class.red-icon]="this.formulario.get('fechaExpiracion').invalid && this.formulario.get('fechaExpiracion').touched"></i>
+                        </div>
+                    </div>
+                    <input type="text" class="form-control" formControlName="fechaExpiracion" maxlength="5" placeholder="DD/MM">
+                </div>
+            </div>
+        </div>
+        <div class="form-group col-md-5">
+            <div class="form-group">
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <div class="input-group-text bg-white">
+                            <i class="fas fa-key" [class.green-icon]="this.formulario.get('cvv').valid"
+                            [class.red-icon]="this.formulario.get('cvv').invalid && this.formulario.get('cvv').touched"></i>
+                        </div>
+                    </div>
+                    <input type="text" class="form-control" formControlName="cvv" maxlength="3" placeholder="CVV">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        <button class="btn btn-success btn-lg btn-block" [disabled]="formulario.invalid" type="submit"><i class="fas fa-database"></i> Aceptar</button>
+    </div>
+</form>

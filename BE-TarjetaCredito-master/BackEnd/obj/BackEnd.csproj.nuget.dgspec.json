@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Adrian y Natalia\\Documents\\Proyecto\\BE-TarjetaCredito-master\\BackEnd\\BackEnd.csproj": {}
+    "C:\\Users\\Adrian y Natalia\\Documents\\GitHub\\ArquitecturaYTalento\\BE-TarjetaCredito-master\\BackEnd\\BackEnd.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Adrian y Natalia\\Documents\\Proyecto\\BE-TarjetaCredito-master\\BackEnd\\BackEnd.csproj": {
+    "C:\\Users\\Adrian y Natalia\\Documents\\GitHub\\ArquitecturaYTalento\\BE-TarjetaCredito-master\\BackEnd\\BackEnd.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Adrian y Natalia\\Documents\\Proyecto\\BE-TarjetaCredito-master\\BackEnd\\BackEnd.csproj",
+        "projectUniqueName": "C:\\Users\\Adrian y Natalia\\Documents\\GitHub\\ArquitecturaYTalento\\BE-TarjetaCredito-master\\BackEnd\\BackEnd.csproj",
         "projectName": "BackEnd",
-        "projectPath": "C:\\Users\\Adrian y Natalia\\Documents\\Proyecto\\BE-TarjetaCredito-master\\BackEnd\\BackEnd.csproj",
+        "projectPath": "C:\\Users\\Adrian y Natalia\\Documents\\GitHub\\ArquitecturaYTalento\\BE-TarjetaCredito-master\\BackEnd\\BackEnd.csproj",
         "packagesPath": "C:\\Users\\Adrian y Natalia\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Adrian y Natalia\\Documents\\Proyecto\\BE-TarjetaCredito-master\\BackEnd\\obj\\",
+        "outputPath": "C:\\Users\\Adrian y Natalia\\Documents\\GitHub\\ArquitecturaYTalento\\BE-TarjetaCredito-master\\BackEnd\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
