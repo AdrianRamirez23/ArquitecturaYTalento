@@ -8,7 +8,7 @@ import { TarjetaCredito } from '../models/tarjetaCredito';
 })
 export class TarjetaService {
   myAppUrl='https://localhost:44317/';
-  myApiUrl='api/TarjetaCredito';
+  myApiUrl='api/TarjetaCredito/';
   list: TarjetaCredito[];
   constructor(private http: HttpClient ) { }
 
@@ -21,5 +21,9 @@ export class TarjetaService {
                    .then(data =>{
                      this.list = data as TarjetaCredito[];
                    });
+  }
+
+  eliminarTarjeta(id: number): Observable<TarjetaCredito> {
+    return this.http.delete<TarjetaCredito>(this.myAppUrl+this.myApiUrl+id);
   }
 }
